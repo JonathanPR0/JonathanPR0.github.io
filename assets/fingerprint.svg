@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" data-inject-url="https://nasseryousef.com.br/idcard/svg/icon-fingerprint.svg" class="icon-s">
+        <path d="M24.5 9.5C33.5656 8.77173 38.4979 9.76482 46.3924 15.7723M16.3134 17.7076C27.2371 13 44 15.7723 51 29.842M13 28.1683C24.6485 17.2368 47.5313 21.5257 47.1689 45.01M14.7084 40.1458C14.7084 25.2393 47.1689 21.3688 39.1444 52.751M19.4714 49.4035C20.5491 47.3887 20.5068 47.0499 20.5068 45.01C18.8501 32.0019 41.267 30.5743 31.6894 55M27.2371 41.6103C27.5864 46.2409 27.1405 48.8363 25.218 53.4309" stroke="url(#paint0_linear_1261_5229--inject-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <defs>
+          <linearGradient id="paint0_linear_1261_5229--inject-2" x1="48.7971" y1="5.98116" x2="7.19254" y2="50.4939" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4371CC"></stop>
+            <stop offset="1" stop-color="rgba(67, 113, 204,0.4)"></stop>
+          </linearGradient>
+        </defs>
+      </svg>

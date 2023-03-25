@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #152340;
+  font-family: "Oxanium", cursive;
+  color: #fff;
+  animation: hidden 0.3s ease 2.8s forwards;
+  overflow: hidden;
+}
+body::-webkit-scrollbar {
+  padding-right: 4px;
+  width: 10px;
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #12192b;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+@keyframes hidden {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  padding: 16px;
+}
+
+section.bg-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #152340 0%, #1b3059 100%);
+  pointer-events: none;
+}
+section.bg-loader .fingerprint {
+  animation: fingerprint 3s ease 0.3s;
+  stroke-opacity: 0;
+}
+@keyframes fingerprint {
+  0% {
+    stroke-dasharray: 0 50;
+    stroke-opacity: 0;
+    stroke-width: 0;
+  }
+  100% {
+    stroke-dasharray: 50 0;
+    stroke-opacity: 1;
+    stroke-width: 2;
+  }
+}
+
+section.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+section.bg-video video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+header svg {
+  max-width: 32px;
+}
+header h6 {
+  font-size: 1rem;
+  line-height: 0.5rem;
+  font-weight: 400;
+}
+
+section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 512px;
+  padding: 32px 48px;
+  border: 4px solid #1b3059;
+  border-radius: 16px;
+  margin: 16px;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+section.card img {
+  width: 100%;
+  background-image: linear-gradient(180deg, 0%, 90%, rgba(0, 212, 255, 0) 100%);
+}
+section.card h6 {
+  display: inline-block;
+  background: linear-gradient(224.78deg, #4371cc 8.12%, rgba(67, 113, 204, 0.4) 92.21%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translate(0px, -16px);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+section.card h1 {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 100;
+  text-align: center;
+}
+section.card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  margin-top: 16px;
+  width: 100%;
+}
+section.card ul li {
+  background-color: #1b3059 60%;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+section.card ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: rgba(244, 235, 255, 0.6);
+  text-decoration: none;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+section.card ul li a:hover {
+  color: #fff;
+}
+section.card ul li a svg {
+  height: 32px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+footer a:hover {
+  opacity: 0.7;
+}
+footer a svg {
+  width: 32px;
+  stroke: #4371cc;
+  opacity: 0.8;
+}
+
+.logo-id {
+  fill: transparent;
+}/*# sourceMappingURL=style.css.map */
